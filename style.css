@@ -6,3 +6,27 @@
 body {
     font-family: monospace;
 }
+
+.grupoComandos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 15px;
+    gap: 10px;
+}
+
+.cartaoComando {
+    width: calc(25% - 15px);
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 10px 5px;
+    transition: 150ms;
+    background-color: rgb(130, 130, 243);
+}
+
+.cartaoComando:hover {
+    scale: 105.5%;
+    background-color: rgb(42, 82, 190);
+    color: white;
+    transform: translateY(-5%);
+}
