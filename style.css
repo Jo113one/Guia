@@ -1,31 +1,120 @@
 * {
     margin: 0px;
     padding: 0px;
-}
+    box-sizing: border-box;
 
-.grupoComandos {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        color: rgb(87, 86, 86);
+        background-color: rgb(24, 21, 21);
+    }
 
-.cartaoComando {
-    border: 1px solid blue;
-    border-radius: 20px;
-    width: 85vw;
-    height: 20vh;
-}
+    header {
+        height: 5vh;
+        background-color: rgb(112, 20, 20);
+    }
 
-@media screen and (min-width: 768px) {
+    main {
+        min-height: 85dvh;
+        display: flex;
+        flex-direction: column;
+        margin-block: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer {
+        height: 7vh;
+        background-color: rgb(112, 20, 20);
+
+    }
+
+    hr {
+        border: none;
+        height: 2px;
+        background-color: rgb(87, 6, 6);
+    }
+
     .grupoComandos {
-    flex-direction: row;
-    flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .cartaoComando {
-    border: 1px solid blue;
-    border-radius: 20px;
-    width: calc(25% - 15px);
-    min-height: fit-content;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px 5px;
+        width: 85vw;
+        height: 20vh;
+        background-color: rgb(47, 47, 54);
+    }
+
+    @media only screen and (min-width: 600px) {
+        body {
+            background-color: rgb(24, 21, 21);
+            font-style: x-large;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .grupoComandos {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .cartaoComando {
+            border: 1px solid black;
+            border-radius: 20px;
+            width: calc(25% - 15px);
+            min-height: fit-content;
+        }
+
+        .cartaoComando:hover {
+            scale: 102%;
+        }
+    }
+
+    .cartaoComando {
+        width: calc(50vw - 30px);
+    }
+
+    .icone {
+        height: 40px;
+        width: 40px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        font-size: xx-large;
+    }
+
+    .cartaoComando:hover {
+        scale: 105.5%;
+        background-color: red;
+        color: black;
+        transform: translateY(-5%);
+        box-shadow: 0px 0px 10px 2px rgb(0, 0, 0),
+            1px 1px 10px 2px red;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .grupoComandos {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    .cartaoComando {
+        min-width: none calc(25v - 15px)
+    }
+
+    .cartaoComando:hover {
+        scale: 105.5%;
+        background-color: red;
+        color: black;
+        transform: translateY(-5%);
+        box-shadow: 0px 0px 10px 2px rgb(0, 0, 0),
+         1px 1px 10px 2px red;
     }
 }
