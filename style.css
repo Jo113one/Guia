@@ -2,21 +2,24 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: monospace;
         font-size: x-large;
         color: rgb(87, 86, 86);
         background-color: rgb(24, 21, 21);
     }
 
     header {
-        height: 5vh;
+        height: 9vh;
         background-color: rgb(112, 20, 20);
+        display: flex;
+        justify-content: center;
     }
 
     main {
-        min-height: 85dvh;
+        min-height: 85vh;
         display: flex;
         flex-direction: column;
         margin-block: auto;
@@ -28,7 +31,6 @@
     footer {
         height: 7vh;
         background-color: rgb(112, 20, 20);
-
     }
 
     hr {
@@ -40,6 +42,8 @@
     .grupoComandos {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
         gap: 15px;
     }
 
@@ -52,14 +56,34 @@
         background-color: rgb(47, 47, 54);
     }
 
+    .icone {
+        height: 40px;
+        width: 40px;
+        margin-right: auto;
+        gap: 8px;
+    }
+
     @media only screen and (min-width: 600px) {
         body {
-            background-color: rgb(24, 21, 21);
-            font-style: x-large;
+            font-style: xx-large;
         }
+
+        .cartaoComando {
+            border: 1px solid black;
+            border-radius: 20px;
+            width: calc(35% - 15px);
+            min-height: fit-content;
+        }
+
+        .cartaoComando:hover {
+            scale: 102%;
     }
 
     @media only screen and (min-width: 768px) {
+        body {
+            border-radius: x-large;
+        }
+
         .grupoComandos {
             flex-direction: row;
             flex-wrap: wrap;
@@ -87,7 +111,13 @@
     }
 
     @media only screen and (min-width: 992px) {
-        font-size: xx-large;
+        .cartaoComando {
+            transition: 100ms;
+        }
+
+        .cartaoComando:hover {
+            scale: 102%;
+        }
     }
 
     .cartaoComando:hover {
@@ -100,9 +130,21 @@
     }
 
     @media only screen and (min-width: 1200px) {
+        main {
+            min-height: 80vh;
+            margin-block: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
         .grupoComandos {
             flex-direction: row;
             flex-wrap: wrap;
+        }
+
+        .icone {
+            height: 50px;
+            width: 50px;
         }
 
     .cartaoComando {
