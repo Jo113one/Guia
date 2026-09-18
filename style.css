@@ -41,10 +41,10 @@
 
     .grupoComandos {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-inline: 15px;
+        gap: 10px;
     }
 
     .cartaoComando {
@@ -66,17 +66,24 @@
     @media only screen and (min-width: 600px) {
         body {
             font-style: xx-large;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .grupoComandos {
+            display: flex;
+            flex-direction: column;
         }
 
         .cartaoComando {
-            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
             border-radius: 20px;
             width: calc(35% - 15px);
             min-height: fit-content;
         }
 
         .cartaoComando:hover {
-            scale: 102%;
+            scale: 105,5%;
     }
 
     @media only screen and (min-width: 768px) {
@@ -130,6 +137,10 @@
     }
 
     @media only screen and (min-width: 1200px) {
+        body {
+            background-color: rgb(247, 243, 243);
+        }
+
         main {
             min-height: 80vh;
             margin-block: auto;
