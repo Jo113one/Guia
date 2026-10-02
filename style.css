@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+button {
+    background-color: #0099cc;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: end;
+}
+
     body {
         font-family: monospace;
         font-size: x-large;
@@ -11,7 +20,34 @@
         background-color: rgb(24, 21, 21);
     }
 
+    .FundoClaro {
+        font-family: monospace;
+        font-size: x-large;
+        color: black;
+        background-color: white;
+    }
+
+    .FundoEscuro {
+        font-family: monospace;
+        font-size: x-large;
+        color: rgb(87, 86, 86);
+        background-color: rgb(24, 21, 21);
+    }
+
     header {
+        height: 9vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .TituloClaro {
+        height: 9vh;
+        background-color:blue;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .TituloEscuro {
         height: 9vh;
         background-color: rgb(112, 20, 20);
         display: flex;
