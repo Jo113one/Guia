@@ -93,6 +93,24 @@ button {
         background-color: rgb(47, 47, 54);
     }
 
+    .cartaoEscuro {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px 5px;
+        width: 70vw;
+        height: 20vh;
+        background-color: rgb(47, 47, 54);
+    }
+
+    .cartaoClaro {
+        border: 1px solid #fff;
+        border-radius: 20px;
+        padding: 10px 5px;
+        width: 70vw;
+        height: 20vh;
+        background-color: blue;
+    }
+
     .icone {
         height: 40px;
         width: 40px;
